@@ -3,64 +3,11 @@
 	<head>
 		<meta http-equiv='Content-Type' content='text/html' charset='UTF-8'>
 		<title>OI - Nazo</title>
+		<link rel='stylesheet' type='text/css' href='./style.css'>
 		<base target='_blank'>
-		<style type='text/css'>
-			.title
-			{
-				font-size: 32px;
-				font-weight: bold;
-				margin-top: 45px;
-			}
-			.text
-			{
-				font-size: 24px;
-				margin-top: 30px;
-				line-height: 50px;
-			}
-			@keyframes init
-			{
-				0%{ transform: rotateY(180deg); }
-				100%{ transform: none; }
-			}
-			#main
-			{
-				display: inline-block;
-				width: 1100px;
-				height: auto;
-				position: fixed;
-				left: calc((100% - 1100px) / 2);
-				top: 100px;
-				padding-bottom: 40px;
-				background-color: #FFFFFF;
-				box-shadow: 0 3px 10px #0000004D;
-				animation-name: init;
-				animation-duration: 3s;
-				animation-iteration-count: 1;
-			}
-			*
-			{
-				margin: 0;
-			}
-			body
-			{
-				background-color: #EFEFEF;
-				color: #333333;
-				font-family: Segoe UI;
-				text-align: center;
-			}
-			hr
-			{
-				display: inline-block;
-				width: 100%;
-				height: 4px;
-				border: none;
-				background-color: #EFEFEF;
-			}
-		</style>
 	</head>
 	<body>
 		<p class='title'>OI&nbsp;-&nbsp;Nazo</p>
-		<meta http-equiv="refresh" content="10;url=https://forkfg.github.io/OI-Nazo/index.html">
 		<div id='main'>
 			<p class='title'>404#&nbsp;&nbsp;File not found</p>
 			<p class='text'>
@@ -68,11 +15,14 @@
 				别放弃，<br>
 				你一定不会成功的！<br>
 				如果没信心了为什么不&nbsp;%&nbsp;一下鰰鱻呢？<br>
-				10&nbsp;秒后将跳转到&nbsp;#0（index）。
+				5&nbsp;秒后将跳转回上一个页面。
 			</p> <hr>
 			<p class='text'>
 				嘿，有 <img src='https://www.cutercounter.com/hits.php?id=gmqofdn&nd=6&style=3'> 个人和你一样误入了此地！
 			</p>
 		</div>
+		<script type='text/javascript'>
+			setTimeout(function(){ history.back(); }, 5000);
+		</script>
 	</body>
 </html>
