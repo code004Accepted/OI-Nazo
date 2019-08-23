@@ -20,7 +20,7 @@
 	display: inline-block;
 	width: 1100px;
 	height: auto;
-	position: fixed;
+	position: absolute;
 	left: calc((100% - 1100px) / 2);
 	top: 100px;
 	padding-bottom: 40px;
