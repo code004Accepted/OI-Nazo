@@ -2,5 +2,7 @@
 
 $(document).ready(function()
 {
-    $("#user_op").prepend(`<a href="http://icelava.ga/OI-Nazo/level_tree.html" class="text"><i class="fa fa-tree"></i> Level Tree</a>`);
+	AJAX("GET", "http://loli.icelava.ga/OI-Nazo/visit.php?", "application/x-www-form- urlencoded", null, NF);
+
+	$("#user_op").prepend(`<a href="http://icelava.ga/OI-Nazo/level_tree.html" class="text"><i class="fa fa-tree"></i> Level Tree</a>`);
 });
